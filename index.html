@@ -8,93 +8,90 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Segoe UI,Arial,sans-serif;
-background:#f5f5f5;
+    font-family:Segoe UI,Arial,sans-serif;
+    background:#ffffff;
 }
 
-/* Shop Banner */
-.shop-banner{
-width:100%;
-height:240px;
-overflow:hidden;
-}
-
+/* Top Shop Image */
 .shop-banner img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
 }
 
 /* Card */
 .card{
-width:92%;
-max-width:380px;
-margin:-40px auto 30px;
-background:#fff;
-border-radius:18px;
-padding:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-position:relative;
+    width:340px;
+    background:#fff;
+    margin:-30px auto 30px;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    position:relative;
 }
 
+/* Restaurant Name */
 h1{
-text-align:center;
-font-size:30px;
-color:#222;
-margin-bottom:18px;
+    text-align:center;
+    font-size:30px;
+    color:#222;
+    margin-bottom:18px;
 }
 
+/* Product */
 .product{
-text-align:center;
-font-size:22px;
-font-weight:bold;
-color:#2e7d32;
-margin-bottom:22px;
+    text-align:center;
+    font-size:20px;
+    font-weight:700;
+    color:#2e7d32;
+    margin-bottom:25px;
 }
 
-.info{
-font-size:18px;
-}
-
+/* Rows */
 .row{
-display:flex;
-justify-content:space-between;
-padding:15px 0;
-border-bottom:1px solid #ececec;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #ececec;
 }
 
 .label{
-font-weight:700;
-color:#333;
+    font-size:17px;
+    font-weight:700;
+    color:#333;
 }
 
 .value{
-color:#333;
+    font-size:17px;
+    color:#333;
 }
 
+/* Price */
 .price{
-margin-top:22px;
-background:#edf7ef;
-color:#1b5e20;
-font-size:32px;
-font-weight:bold;
-text-align:center;
-padding:15px;
-border-radius:12px;
+    margin-top:22px;
+    background:#edf7ef;
+    border-radius:12px;
+    padding:14px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    color:#1b5e20;
 }
 
+/* Footer */
 .footer{
-text-align:center;
-font-size:14px;
-color:#777;
-margin-top:18px;
+    margin-top:18px;
+    text-align:center;
+    color:#888;
+    font-size:15px;
 }
 </style>
 
@@ -103,7 +100,7 @@ margin-top:18px;
 <body>
 
 <div class="shop-banner">
-<img src="shop.jpg" alt="Karupetti House">
+    <img src="shop.jpg" alt="Karupetti House">
 </div>
 
 <div class="card">
@@ -114,44 +111,14 @@ margin-top:18px;
 🟢 VEG SANDWICH
 </div>
 
-<div class="info">
-
 <div class="row">
-<span class="label">FSSAI No.</span>
-<span class="value">10026912000209</span>
+    <span class="label">FSSAI No.</span>
+    <span class="value">10026912000209</span>
 </div>
 
 <div class="row">
-<span class="label">MFG</span>
-<span class="value" id="mfg-date"></span>
+    <span class="label">MFG</span>
+    <span class="value" id="mfg-date"></span>
 </div>
 
-<div class="row">
-<span class="label">Validity</span>
-<span class="value">1 Day</span>
-</div>
-
-</div>
-
-<div class="price">
-₹50
-</div>
-
-<div class="footer">
-Freshly Prepared • Best Quality
-</div>
-
-</div>
-<script>
-const today = new Date();
-
-const day = String(today.getDate()).padStart(2,'0');
-const month = String(today.getMonth()+1).padStart(2,'0');
-const year = today.getFullYear();
-
-document.getElementById("mfg-date").innerHTML =
-`${day}-${month}-${year}`;
-</script>
-
-</body>
-</html>
+<div class="
