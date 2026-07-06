@@ -121,4 +121,31 @@ h1{
     <span class="value" id="mfg-date"></span>
 </div>
 
-<div class="
+<div class="row">
+    <span class="label">Validity</span>
+    <span class="value">1 Day</span>
+</div>
+
+<div class="price">
+₹50
+</div>
+
+<div class="footer">
+Freshly Prepared • Best Before 1 Day
+</div>
+
+</div>
+
+<script>
+const today = new Date();
+
+const day = String(today.getDate()).padStart(2,'0');
+const month = String(today.getMonth()+1).padStart(2,'0');
+const year = today.getFullYear();
+
+document.getElementById("mfg-date").textContent =
+`${day}-${month}-${year}`;
+</script>
+
+</body>
+</html>
